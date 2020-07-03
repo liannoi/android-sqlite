@@ -12,4 +12,8 @@ public class ProductsListViewModel {
     public List<ProductModel> getProducts() {
         return products;
     }
+
+    public int count() {
+        return products.size();
+    }
 }

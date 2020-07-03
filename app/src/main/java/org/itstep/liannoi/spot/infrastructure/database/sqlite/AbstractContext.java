@@ -6,10 +6,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-public abstract class AbstractDatabaseContext extends SQLiteOpenHelper implements AbstractlyContext {
+public abstract class AbstractContext extends SQLiteOpenHelper implements AbstractlyContext {
     private SQLiteDatabase database;
 
-    public AbstractDatabaseContext(@Nullable Context context, @Nullable String name, int version) {
+    public AbstractContext(@Nullable Context context, @Nullable String name, int version) {
         super(context, name, null, version);
     }
 

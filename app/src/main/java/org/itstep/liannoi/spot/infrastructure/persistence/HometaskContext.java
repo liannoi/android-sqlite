@@ -7,11 +7,11 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
-import org.itstep.liannoi.spot.infrastructure.database.sqlite.AbstractDatabaseContext;
+import org.itstep.liannoi.spot.infrastructure.database.sqlite.AbstractContext;
 import org.itstep.liannoi.spot.infrastructure.database.sqlite.SpecificContext;
 import org.jetbrains.annotations.NotNull;
 
-public final class HometaskContext extends AbstractDatabaseContext implements SpecificContext {
+public final class HometaskContext extends AbstractContext implements SpecificContext {
     public HometaskContext(@Nullable Context context) {
         super(context, PersistenceDefaults.DATABASE_NAME, PersistenceDefaults.DATABASE_VERSION);
     }
