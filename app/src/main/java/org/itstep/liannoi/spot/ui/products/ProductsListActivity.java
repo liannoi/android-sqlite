@@ -6,10 +6,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import org.itstep.liannoi.spot.R;
-import org.itstep.liannoi.spot.common.interfaces.Repository;
-import org.itstep.liannoi.spot.storage.HometaskContext;
-import org.itstep.liannoi.spot.storage.products.ProductsRepository;
-import org.itstep.liannoi.spot.storage.products.models.ProductModel;
+import org.itstep.liannoi.spot.infrastructure.persistence.HometaskContext;
+import org.itstep.liannoi.spot.storage.products.commands.DeleteCommand;
+import org.itstep.liannoi.spot.storage.products.models.ProductsListViewModel;
+import org.itstep.liannoi.spot.storage.products.queries.ListQuery;
 
 public class ProductsListActivity extends AppCompatActivity {
     @Override
@@ -18,7 +18,10 @@ public class ProductsListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_products_list);
 
         // Custom.
-        Repository<ProductModel> productsRepository = new ProductsRepository(new HometaskContext(this));
-        Toast.makeText(this, String.valueOf(productsRepository.getAll().size()), Toast.LENGTH_SHORT).show();
+
+        HometaskContext context = new HometaskContext(this);
+        new DeleteCommand.Handler(context).handle(new DeleteCommand(1));
+        ProductsListViewModel productsViewModel = new ListQuery.Handler(context).handle(new ListQuery());
+        Toast.makeText(this, String.valueOf(productsViewModel.getProducts().size()), Toast.LENGTH_SHORT).show();
     }
 }

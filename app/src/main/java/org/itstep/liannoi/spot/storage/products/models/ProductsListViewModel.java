@@ -8,4 +8,8 @@ public class ProductsListViewModel {
     public ProductsListViewModel(List<ProductModel> products) {
         this.products = products;
     }
+
+    public List<ProductModel> getProducts() {
+        return products;
+    }
 }

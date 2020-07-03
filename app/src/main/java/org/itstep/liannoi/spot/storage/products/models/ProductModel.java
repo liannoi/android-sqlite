@@ -1,6 +1,11 @@
 package org.itstep.liannoi.spot.storage.products.models;
 
-public class ProductModel {
+import android.content.ContentValues;
+
+import org.itstep.liannoi.spot.infrastructure.persistence.PersistenceDefaults;
+import org.itstep.liannoi.spot.infrastructure.storage.models.Valuable;
+
+public class ProductModel implements Valuable {
     private int productId;
     private String name;
     private double price;
@@ -45,5 +50,15 @@ public class ProductModel {
 
     public int getProductId() {
         return productId;
+    }
+
+    @Override
+    public ContentValues getValues() {
+        ContentValues values = new ContentValues();
+        values.put(PersistenceDefaults.DATABASE_TABLE_PRODUCTS_COLUMN_NAME, name);
+        values.put(PersistenceDefaults.DATABASE_TABLE_PRODUCTS_COLUMN_PRICE, price);
+        values.put(PersistenceDefaults.DATABASE_TABLE_PRODUCTS_COLUMN_WEIGHT, weight);
+
+        return values;
     }
 }

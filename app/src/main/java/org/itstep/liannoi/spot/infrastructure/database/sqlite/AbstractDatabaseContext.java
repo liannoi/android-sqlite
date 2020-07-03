@@ -1,4 +1,4 @@
-package org.itstep.liannoi.spot.common.database;
+package org.itstep.liannoi.spot.infrastructure.database.sqlite;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public abstract class AbstractDatabaseContext extends SQLiteOpenHelper implements AbstractlyContext {
-    protected SQLiteDatabase database;
+    private SQLiteDatabase database;
 
     public AbstractDatabaseContext(@Nullable Context context, @Nullable String name, int version) {
         super(context, name, null, version);
@@ -31,5 +31,8 @@ public abstract class AbstractDatabaseContext extends SQLiteOpenHelper implement
         database = this.getReadableDatabase();
     }
 
-
+    @Override
+    public SQLiteDatabase getDatabase() {
+        return database;
+    }
 }

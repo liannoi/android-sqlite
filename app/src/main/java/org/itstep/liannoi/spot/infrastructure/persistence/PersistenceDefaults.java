@@ -1,6 +1,6 @@
-package org.itstep.liannoi.spot;
+package org.itstep.liannoi.spot.infrastructure.persistence;
 
-public abstract class PresentationDefaults {
+public abstract class PersistenceDefaults {
     public static final String DATABASE_NAME = "Hometask";
     public static final int DATABASE_VERSION = 1;
     public static final String DATABASE_TABLE_PRODUCTS = "Products";
