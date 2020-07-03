@@ -1,8 +1,8 @@
 package org.itstep.liannoi.spot.application.storage.products;
 
-import org.itstep.liannoi.spot.application.common.storage.Facade;
-import org.itstep.liannoi.spot.application.common.storage.MockProvider;
-import org.itstep.liannoi.spot.application.common.storage.sqlite.SpecificContext;
+import org.itstep.liannoi.spot.application.common.interfaces.Facade;
+import org.itstep.liannoi.spot.application.common.interfaces.MockProvider;
+import org.itstep.liannoi.spot.application.common.sqlite.SpecificContext;
 import org.itstep.liannoi.spot.application.storage.products.commands.CreateCommand;
 import org.itstep.liannoi.spot.application.storage.products.commands.DeleteCommand;
 import org.itstep.liannoi.spot.application.storage.products.models.ProductModel;

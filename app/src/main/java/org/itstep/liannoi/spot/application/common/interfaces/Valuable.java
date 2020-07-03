@@ -1,4 +1,4 @@
-package org.itstep.liannoi.spot.application.common.storage;
+package org.itstep.liannoi.spot.application.common.interfaces;
 
 import android.content.ContentValues;
 

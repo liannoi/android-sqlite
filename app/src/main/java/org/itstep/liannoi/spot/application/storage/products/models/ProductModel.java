@@ -2,7 +2,7 @@ package org.itstep.liannoi.spot.application.storage.products.models;
 
 import android.content.ContentValues;
 
-import org.itstep.liannoi.spot.application.common.storage.Valuable;
+import org.itstep.liannoi.spot.application.common.interfaces.Valuable;
 import org.itstep.liannoi.spot.infrastructure.persistence.PersistenceDefaults;
 
 public class ProductModel implements Valuable {

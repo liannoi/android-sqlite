@@ -28,9 +28,7 @@ public class ProductsListActivity extends AppCompatActivity {
         productsFacade = new ProductsFacade(new HometaskContextFactory(this).create(),
                 new ProductsMockProvider(InfrastructureDefaults.PRODUCTS_MOCK_LENGTH, new RandomClient()));
 
-        productsFacade.clear();
         productsFacade.mock();
-
         prepareRecyclerView(productsFacade.get());
     }
 

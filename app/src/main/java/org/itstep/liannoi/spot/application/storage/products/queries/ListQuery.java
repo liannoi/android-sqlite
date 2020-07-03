@@ -2,9 +2,9 @@ package org.itstep.liannoi.spot.application.storage.products.queries;
 
 import android.database.Cursor;
 
-import org.itstep.liannoi.spot.application.common.storage.cqrs.ResultRequest;
-import org.itstep.liannoi.spot.application.common.storage.cqrs.ResultRequestHandler;
-import org.itstep.liannoi.spot.application.common.storage.sqlite.SpecificContext;
+import org.itstep.liannoi.spot.application.common.cqrs.ResultRequest;
+import org.itstep.liannoi.spot.application.common.cqrs.ResultRequestHandler;
+import org.itstep.liannoi.spot.application.common.sqlite.SpecificContext;
 import org.itstep.liannoi.spot.application.storage.products.models.ProductModel;
 import org.itstep.liannoi.spot.application.storage.products.models.ProductsListViewModel;
 import org.itstep.liannoi.spot.infrastructure.persistence.PersistenceDefaults;

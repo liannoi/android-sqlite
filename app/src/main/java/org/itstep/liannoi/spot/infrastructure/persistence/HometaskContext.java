@@ -7,7 +7,7 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
-import org.itstep.liannoi.spot.application.common.storage.sqlite.SpecificContext;
+import org.itstep.liannoi.spot.application.common.sqlite.SpecificContext;
 import org.itstep.liannoi.spot.infrastructure.persistence.core.AbstractContext;
 import org.jetbrains.annotations.NotNull;
 

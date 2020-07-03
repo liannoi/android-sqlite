@@ -1,8 +1,8 @@
 package org.itstep.liannoi.spot.application.storage.products.commands;
 
-import org.itstep.liannoi.spot.application.common.storage.cqrs.Request;
-import org.itstep.liannoi.spot.application.common.storage.cqrs.RequestHandler;
-import org.itstep.liannoi.spot.application.common.storage.sqlite.SpecificContext;
+import org.itstep.liannoi.spot.application.common.cqrs.Request;
+import org.itstep.liannoi.spot.application.common.cqrs.RequestHandler;
+import org.itstep.liannoi.spot.application.common.sqlite.SpecificContext;
 import org.itstep.liannoi.spot.application.storage.products.models.ProductModel;
 import org.itstep.liannoi.spot.infrastructure.persistence.PersistenceDefaults;
 import org.jetbrains.annotations.NotNull;

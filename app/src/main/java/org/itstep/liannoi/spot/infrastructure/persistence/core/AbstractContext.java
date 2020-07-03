@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-import org.itstep.liannoi.spot.application.common.storage.sqlite.AbstractlyContext;
+import org.itstep.liannoi.spot.application.common.sqlite.AbstractlyContext;
 
 public abstract class AbstractContext extends SQLiteOpenHelper implements AbstractlyContext {
     private SQLiteDatabase database;

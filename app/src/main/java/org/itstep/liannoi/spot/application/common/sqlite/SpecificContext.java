@@ -1,4 +1,4 @@
-package org.itstep.liannoi.spot.application.common.storage.sqlite;
+package org.itstep.liannoi.spot.application.common.sqlite;
 
 import android.database.Cursor;
 

@@ -1,7 +1,7 @@
 package org.itstep.liannoi.spot.application.storage.products;
 
 import org.itstep.liannoi.spot.application.common.interfaces.Randomise;
-import org.itstep.liannoi.spot.application.common.storage.MockProvider;
+import org.itstep.liannoi.spot.application.common.interfaces.MockProvider;
 import org.itstep.liannoi.spot.application.storage.products.models.ProductModel;
 import org.itstep.liannoi.spot.application.storage.products.models.ProductsListViewModel;
 import org.jetbrains.annotations.NotNull;
