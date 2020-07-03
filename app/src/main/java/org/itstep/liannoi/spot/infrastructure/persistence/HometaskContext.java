@@ -7,8 +7,8 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
-import org.itstep.liannoi.spot.infrastructure.database.sqlite.AbstractContext;
-import org.itstep.liannoi.spot.infrastructure.database.sqlite.SpecificContext;
+import org.itstep.liannoi.spot.application.common.storage.sqlite.SpecificContext;
+import org.itstep.liannoi.spot.infrastructure.persistence.core.AbstractContext;
 import org.jetbrains.annotations.NotNull;
 
 public final class HometaskContext extends AbstractContext implements SpecificContext {
